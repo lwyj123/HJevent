@@ -27,7 +27,7 @@ Example
 var eventEmitter = new HJevent();
 var echotest = function() {
     alert("this is a test");
-});
+};
 
 
 eventEmitter.on("echotest", echotest);
