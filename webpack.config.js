@@ -1,9 +1,25 @@
 var path = require('path');
+var pkg = require('./package.json');
+var webpack = require('webpack');
+
+var bannerPack = new webpack.BannerPlugin({
+  banner:
+    'HJevent v' + pkg.version + '\n' +
+    'https://lw-ezio.com/\n' +
+    'Copyright (c) 2017, Liang Yuyi',
+  entryOnly: true
+});
+var constantPack = new webpack.DefinePlugin({
+  QUILL_VERSION: JSON.stringify(pkg.version)
+});
+
 module.exports = {
-  entry: "./src/HJevent.js",//入口文件
+  entry: "./HJevent.js",//入口文件
   output: {//打包输出的文件
     path: path.resolve(__dirname, 'dist'),
-    filename: "HJevent.js"
+    filename: "HJevent.js",
+    library: 'HJevent',
+    libraryTarget: 'umd',
   },
   module: {
     rules: [
