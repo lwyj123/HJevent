@@ -6,6 +6,11 @@ a wheel of EventEmitter use es6 (HJproject)
 ```javascript
 <script src="HJevent.js"></script>
 ```
+or
+> npm install --save hjevent
+```javascript
+import HJevent from 'hjevent';
+```
 
 # Usage
 ### HJevent.on(event, listener)
