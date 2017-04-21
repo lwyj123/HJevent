@@ -1,6 +1,3 @@
-import extend from 'extend';
-
-
 
 class HJevent {
     /**

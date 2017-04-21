@@ -4,7 +4,30 @@
     "babel-preset-es2015": "^6.24.1",
     "webpack": "^2.4.1"
   },
-  "dependencies": {
-    "extend": "^3.0.0"
-  }
+  "dependencies": {},
+  "name": "hjevent",
+  "description": "a wheel of EventEmitter use es6 (HJproject)",
+  "version": "0.0.1",
+  "main": "HJevent.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwyj123/HJevent.git"
+  },
+  "keywords": [
+    "eventEmitter",
+    "es6"
+  ],
+  "author": "lwyj123",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwyj123/HJevent/issues"
+  },
+  "homepage": "https://github.com/lwyj123/HJevent#readme"
 }
